@@ -1,0 +1,341 @@
+
+/* ====================================================   GLOBAL DEFINITION   ==================================================== */
+
+@font-face {
+    font-family: 'Tauri';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Tauri Regular'), local('Tauri-Regular'), url(http://themes.googleusercontent.com/static/fonts/tauri/v2/33NkxyDp8MBgQpwno_A-zw.woff) format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    padding: 5px 2%;
+}
+
+body {
+    width: 950px;
+    margin: 0 auto; 
+    font: normal .75em Arial, sans-serif;
+    color: #474747; 
+    background: #ffffff;
+}
+
+/* Links */
+a {
+    color:#0000e6; 
+    font-weight: bold;
+}
+a:hover, a:focus {
+    color: #8F8F90;
+}
+
+a.more {
+    float: right;
+}
+a.more:after {
+    content: " >"; 
+    display: inline-block; 
+    height: 1em; 
+    padding: 0 .5em 0.5em 0.5em;
+    border-radius: 1em;
+    background: #999999;
+    margin-left: 10px;
+}
+footer a {
+    color: #989898;
+}
+
+a.more:hover, footer a:hover {
+    color: #4A4A4A;
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.6em;
+    margin: 20px 0;
+}
+
+h1 {
+    font: bold 1.875em Tauri, serif;
+    color:#000000;
+}
+h2 { 
+    font-size: 1.875em;
+    font-weight: normal;
+    color: #000000; 
+    padding: 10px 5px;
+    border-bottom: 1px solid #BBBCBE;
+}
+
+
+
+h2.img {
+    padding-left: 40px;
+    background: left center no-repeat scroll;
+}
+.img.group1{
+    background-image: url('../img/icon1.png')
+}
+.img.group2 {
+    background-image: url('../img/icon2.png')
+}
+.img.group3 {
+    background-image: url('../img/icon3.png')
+}
+
+
+
+h3 {
+    font: normal 1.10em Tauri, serif;
+    color: #898989; 
+    margin: 20px 0;
+}
+
+img, a img {
+    border: 0 none;
+}
+
+ul.bullets  {
+    margin: 30px 0 0 13px;
+    color: #FFA128;
+}
+ul.bullets li {
+    width: 100%; 
+    font-size: 1.10em; 
+    font-weight: bold; 
+    padding-left: 5px;
+    line-height: 2.0em;
+    color: #FFA128;
+}
+ul.bullets li span	{
+    color: #474747;
+}
+
+
+dl {
+    margin-bottom: 50px;
+    clear: left;
+}
+ 
+dt {	
+    float: left;
+    font-weight: bold;
+    margin-right: 5px;
+    padding: 5px; 
+    width: 90px;
+}
+ 
+dd {
+    margin: 2px 0;
+    padding: 5px 0;
+}
+
+/* ====================================================  HEADER   ==================================================== */
+
+header {
+    width: 100%;
+    height: 240px;
+    background: url('../img/header.png') no-repeat center bottom #e7e8ee;
+    background-size: contain; border: 1px solid #E5E7EB;
+}
+
+#logo	{
+    float: left;
+    margin: 30px 0 0 30px;
+    padding: 10px 0 25px 70px;
+    background: url('../img/logo.png') no-repeat left;
+    text-decoration: none;
+}
+
+#navlink {
+    display:none;
+    float: right;
+    text-decoration: none;
+    font-size: 1.875em;
+    font-weight: bold;
+    padding: 10px; 
+    margin: 30px 30px 0 0;
+}
+
+
+/* ====================================================   CONTENT   ==================================================== */
+
+main	{
+    display: block;
+    position: relative;
+    width: 100%
+}
+
+article {
+    float: left;
+    background: #FAFBFC;
+    border: 1px #E5E7EB solid;
+    margin-top: 70px;
+    width: 96%; 
+    padding: 20px 2%;
+}
+section {
+    float: left;
+    width: 74%;
+}
+section.spalte {
+    float: left;
+    width:33%;
+    padding:20px 2%;
+    min-height: 220px;
+}
+section.spalte h2	{
+    border-bottom: 0 none;
+}
+main .news-1 { 
+    background: url('../img/phone.png') no-repeat right #EEEEEE;
+} 
+main .news-2	{
+    background: url('../img/letter.png') no-repeat right #EEEEEE
+}
+
+aside {
+    float: right;
+    width: 23%;
+}
+aside ul {
+    line-height: 1.6em;
+    list-style: none outside none;
+    padding: 1em 0 1em 5px;
+    clear: left;
+}
+aside p {
+    margin-bottom: 50px;
+}
+aside p:last-child {
+    margin-bottom: 20px;
+}
+/* ====================================================  NAV   ==================================================== */
+
+nav	{ 
+	float: left; 
+	width: 100%;  
+	list-style-type: none; 
+	box-shadow: 0 10px 5px 0 rgba(0,0,0,0.75);
+	position: absolute;
+	top: -11px; left:0%;
+	display: block;
+	text-align: center;
+	margin: 0 auto 30px;
+}
+nav ul {
+    float: left; 
+    width: 100%; 
+    list-style-type: none;
+    background: #0073e6; 
+}
+nav ul li {
+    float: left; 
+}
+nav ul li:first-child {
+    margin-left: 2%;
+}
+nav ul li a 	{
+    float: left;
+    padding: 16px 0 16px 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+nav ul li a:after {
+    content:" | ";
+    color: #ffa323;
+    margin-left: 20px;
+} 
+nav li a:hover, nav li a:focus {
+    background: #0073e6;
+}
+
+
+/* ====================================================   FOOTER   ==================================================== */
+
+footer {
+    float: left;
+    width: 100%;
+    margin: 10px 0 40px 0;
+    color: #989898
+}
+footer ul {
+    float: left;
+    margin-left: 22px;
+    list-style-type: none;
+}
+footer ul li	 {
+    display: inline-block;
+    border-left: 1px solid #989898;
+}
+footer ul li:first-child	 {
+    border: 0 none;
+}
+footer ul li a {
+    padding: 0 8px;
+}
+footer p {
+    float: right;
+    margin-right: 30px;
+    margin-top: 0;
+    padding-top: 0;
+    text-align: right;
+}
+
+@media screen and (max-width: 950px) {
+    body {width:100%}
+    section {width:58%;}
+    section.spalte, 
+    aside {width:29%;}
+}
+
+@media screen and (max-width: 620px) {
+    section, 
+    section.spalte, 
+    aside {
+        float: none;
+        width: 96%;
+    }
+
+    header {
+        height: 200px; 
+    }
+    #navlink {
+        display:block;
+    }
+
+    article {
+        margin-top: 16px; 
+    }
+    nav {
+        position:relative;
+    }
+    nav ul {
+        display: block; 
+        background: transparent;
+        margin: 3em 0 2em;
+    }
+    nav ul li{
+        width: 90%;
+        margin: 5px 2%;
+    }
+    nav ul li a{
+        width: 90%;
+        background: #0073e6;
+        margin: 5px 5%; 
+        border-radius: 10px;
+    }
+    nav ul li a:after {
+        display:none;
+    } 
+}
+
+
+
+
+
